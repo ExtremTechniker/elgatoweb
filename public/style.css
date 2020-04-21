@@ -1,0 +1,79 @@
+:root {
+    --background-primary: #112233;
+    --background-secondary: #112233;
+
+    --color-primary: #e1e1e1;
+    --color-secondary: #c9c9c9;
+
+    font-family: "Montserat",sans-serif;
+}
+
+body {
+    margin:0;
+    padding:0;
+
+    background-color: var(--background-primary);
+    color: var(--color-primary);
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.inline-block > * {
+    display:inline-block;
+}
+
+.row {
+    margin: 20px 0;
+    display: flex;
+}
+
+.item {
+    display: inline-block;
+    border: 2px solid var(--color-secondary);
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    position: relative;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+}
+
+.item span.text {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    left:0;
+    color: attr(color);
+}
+
+.item[data-text-position="Bottom"] span.text {
+    bottom:5px;
+}
+
+.item[data-text-position="Middle"] span.text {
+    bottom: 50%;
+    transform:translateY(50%);
+}
+
+.item[data-text-position="Top"] span.text {
+    top:5px
+}
+
+.item[data-text-color="Dark"] span.text {
+    color:#000
+}
+
+.item[data-text-position="Light"] span.text {
+    color:#fff;
+}

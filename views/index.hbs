@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream Deck</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading center inline-block"><h1>Stream Deck!</h1> <span><a href="#">Click me to maximize me</a></span></div>
+
+    <div class="container">
+
+        {{#each rows}}
+            <div class="row">
+                {{#each this.items}}
+                    <div class="item" data-text-position="{{this.textposition}}" onclick="{{this.functionname}}" data-text-color={{this.textcolor}}>
+                        <img src="img/{{this.img}}" alt="">
+                        <span class="text">{{this.text}}</span>
+                    </div>
+                {{/each}}
+            </div>
+        {{/each}}
+        <!--
+        <div class="row">
+            <div class="item" data-text-position="up|middle|bottom" data-function="text">
+                <img src="img/pg1.jpg" alt="">
+                <span class="text"></span>
+            </div>
+            <div class="item" data-text-position="up|middle|bottom" data-function="text">
+                <img src="usr" alt="">
+                <span class="text"></span>
+            </div>
+            <div class="item" data-text-position="up|middle|bottom" data-function="text">
+                <img src="usr" alt="">
+                <span class="text"></span>
+            </div>
+            <div class="item" data-text-position="up|middle|bottom" data-function="text">
+                <img src="usr" alt="">
+                <span class="text"></span>
+            </div>
+            <div class="item" data-text-position="up|middle|bottom" data-function="text">
+                <img src="usr" alt="">
+                <span class="text"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="item" data-text-position="up|middle|bottom" data-function="text">
+                <img src="usr" alt="">
+                <span class="text"></span>
+            </div>
+            <div class="item" data-text-position="up|middle|bottom" data-function="text">
+                <img src="usr" alt="">
+                <span class="text"></span>
+            </div>
+            <div class="item" data-text-position="up|middle|bottom" data-function="text">
+                <img src="usr" alt="">
+                <span class="text"></span>
+            </div>
+            <div class="item" data-text-position="up|middle|bottom" data-function="text">
+                <img src="usr" alt="">
+                <span class="text"></span>
+            </div>
+            <div class="item" data-text-position="up|middle|bottom" data-function="text">
+                <img src="usr" alt="">
+                <span class="text"></span>
+            </div>
+        </div>
+        -->
+    </div>
+</body>
+</html>

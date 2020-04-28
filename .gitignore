@@ -102,3 +102,11 @@ dist
 
 # TernJS port file
 .tern-port
+
+
+#Dev
+#jquery-3.5.0.js
+nodemon.json
+tsconfig.json
+public/files/*
+frames.html

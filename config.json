@@ -5,8 +5,8 @@
             "items": [
                 {
                     "textposition": "Bottom",
-                    "function": "helloWorld()",
-                    "img": "pg1.jpg",
+                    "function": "play_pause()",
+                    "img": "files/btn_media_play_pause.svg",
                     "text": "Hello world",
                     "textcolor": "Dark"
 

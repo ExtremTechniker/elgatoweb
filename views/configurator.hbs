@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream Deck</title>
+    <script src="jquery-3.5.0.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <!--<div class="heading center inline-block"><h1>Stream Deck!</h1> <span><a onclick="openFullscreen(container)">Click me to maximize me</a></span></div>-->
+    <i onclick="openFullscreen(container)" class="fullscreen far fa-window-maximize fa-3x"></i>
+    <i onclick="location.reload()" class="reloadConfig fas fa-redo-alt fa-3x"></i>
+    <a class="settings" href="/"><i class="fas fa-times fa-3x"></i></a>
+    <div class="container">
+
+        <form action="/configurator" method="post">
+            <input type="text" name="rows" id="rows" value="5" placeholder="ROWS"><br>
+            <input type="text" name="cols" id="cols" value="8" placeholder="COLS"><br>
+            <input type="text" name="name" id="name" placeholder="NAME"><br>
+            <button type="submit">Seite Generieren</button>
+        </form> 
+    </div>
+    <script>
+        let container = document.getElementsByClassName("container")[0];
+    </script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 require('./streamdeck')
-require('./lib/OBSWebSocket')
+const OBS = require('./lib/OBSWebSocket')
 
 function openFullscreen(elem) {
     if (elem.requestFullscreen) {
@@ -20,6 +20,10 @@ function requestUrl(url) {
 function openDeckFolder(folder) {
 location.search = "?p="+folder
 }
+
+const con = new OBS();
+
+con.connect({address:'localhost:4444',password:''})
 
 
 ////////////////////////////////////////////////////

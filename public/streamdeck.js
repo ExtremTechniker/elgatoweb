@@ -16,3 +16,5 @@ function openExplorer() {
 function play_pause() {
     requestUrl("http://192.168.0.10:42800/send/PlayPauseMusic")
 }
+
+//#Testing

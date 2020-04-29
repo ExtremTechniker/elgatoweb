@@ -1,4 +1,4 @@
-//Edit Here YOUR SCRIPTS
+//Edit here YOUR SCRIPTS!!!
 
 function openTwitch() {
     requestUrl("http://localhost:42800/send/OpenTwitch")

@@ -1,4 +1,5 @@
 require('./streamdeck')
+require('./lib/OBSWebSocket')
 
 function openFullscreen(elem) {
     if (elem.requestFullscreen) {
